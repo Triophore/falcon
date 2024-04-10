@@ -45,27 +45,11 @@ use chrono::format::strftime::StrftimeItems;
 
 #[catch(404)]
 async fn not_found() -> Template {
-    let cms_url = env::var("CMS_HOST").unwrap_or(String::from("http://127.0.0.1:8090"));
-    let cms_public = env::var("CMS_PUBLIC").unwrap_or(String::from("http://127.0.0.1:8090"));
-    let mut context_data:  HashMap<String,Value> =  HashMap::new();
-    context_data.insert(String::from("cms_url"), serde_json::Value::String(cms_public.clone()));
-
-
-    let industries_url = format!("{}/api/collections/Industries/records?fields=Title",cms_url);
-    match reqwest::get(industries_url).await {
-         Ok(resp) => {
-             let json: serde_json::Value = resp.json().await.unwrap();
-             context_data.insert(String::from("industries"),json);
-           // info!("{:?}",context_data);
-         }
-         Err(err) => {
-            info!("Reqwest Error: {}", err)
-         }
-    }
+    
 
 
     Template::render("errors/404", context! {
-        context : context_data
+  
     })
 }
 
