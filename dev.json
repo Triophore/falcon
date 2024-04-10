@@ -1,0 +1,66 @@
+{
+    "testimonials": Object {
+        "data": Array [Object {
+                "attributes": Object {
+                    "Avatar": Object {
+                        "data": Object {
+                            "attributes": Object {
+                                "alternativeText": Null,
+                                "caption": Null,
+                                "createdAt": String("2023-11-11T19:23:19.906Z"),
+                                "ext": String(".png"),
+                                "formats": Object {
+                                    "thumbnail": Object {
+                                        "ext": String(".png"),
+                                        "hash": String("thumbnail_rakesh_5d8b234ede"),
+                                        "height": Number(156),
+                                        "mime": String("image/png"),
+                                        "name": String("thumbnail_rakesh.png"),
+                                        "path": Null,
+                                        "provider_metadata": Object {
+                                            "public_id": String("thumbnail_rakesh_5d8b234ede"),
+                                            "resource_type": String("image")
+                                        },
+                                        "size": Number(43.68),
+                                        "url": String("https://res.cloudinary.com/dmquafjck/image/upload/v1699730599/thumbnail_rakesh_5d8b234ede.png"),
+                                        "width": Number(156)
+                                    }
+                                },
+                                "hash": String("rakesh_5d8b234ede"),
+                                "height": Number(200),
+                                "mime": String("image/png"),
+                                "name": String("rakesh.png"),
+                                "previewUrl": Null,
+                                "provider": String("cloudinary"),
+                                "provider_metadata": Object {
+                                    "public_id": String("rakesh_5d8b234ede"),
+                                    "resource_type": String("image")
+                                },
+                                "size": Number(17.23),
+                                "updatedAt": String("2023-11-11T19:23:19.906Z"),
+                                "url": String("https://res.cloudinary.com/dmquafjck/image/upload/v1699730598/rakesh_5d8b234ede.png"),
+                                "width": Number(200)
+                            },
+                            "id": Number(12)
+                        }
+                    },
+                    "Name": String("Rakesh Oopath"),
+                    "Role": String("CEO Orbio Solutions"),
+                    "Testimony": String("I had a great time working with Triophore. Their commitment to excellence and exceptional service left a                                                      lasting impression on me. Triophore not only provided me\nwith a superior product but also demonstrated their genuine care for my satisfaction. Their team went above and beyond to understand my specific needs and tailor their solution accordingly. Their attention to detail and willingness to go the extra mile truly set them apart."),
+                    "createdAt": String("2023-11-11T19:23:26.868Z"),
+                    "publishedAt": String("2023-11-11T19:24:32.033Z"),
+                    "updatedAt": String("2023-11-11T19:24:32.034Z")
+                },
+                "id": Number(1)
+            }
+        ],
+        "meta": Object {
+            "pagination": Object {
+                "page": Number(1),
+                "pageCount": Number(1),
+                "pageSize": Number(25),
+                "total": Number(1)
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{% extends "layouts/home" %}
+
+{% block body %}
+<div class="content-wrapper">
+    {% include "includes/page_header" %}
+    {% include "includes/progress" %}
+  
+    {% include "includes/footer" %}
+</div>
+{% endblock body %}

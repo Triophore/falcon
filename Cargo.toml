@@ -1,0 +1,37 @@
+[package]
+name = "triophore_v2_website"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.release]
+opt-level = "s"
+panic = "abort"
+strip = "symbols"
+lto = "fat"
+codegen-units=1
+debug-assertions = true
+overflow-checks = true
+
+[dependencies]
+rocket = { version = ">=0.5.0-rc.4", features = ["secrets","http2"] }
+rocket_dyn_templates = { version = "0.1.0-rc.3", features = ["tera"] }
+# rocket_contrib = "*"
+# rocket_contrib = "0.4.10"
+chrono = "0.4.23"
+log = "0.4"
+log4rs = { version="1", features=["gzip"]}
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version="1.0.108" }
+json = "0.12"
+reqwest ={ version="0.11.12"  , features = ["blocking", "json"]}
+urlencoding = "2.1.2"
+byte-unit = "4.0.17"
+tera = "1.19.1"
+dotenv = "0.15.0"
+
+
+# [dependencies.rocket_dyn_templates]
+# version = "0.1.0"
+# features = ["tera"]

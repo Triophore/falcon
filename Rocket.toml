@@ -1,0 +1,7 @@
+[default]
+address = "127.0.0.1"
+port = 8000
+template_dir = "templates"
+ident = "triophore"
+log_level = "Debug"
+secret_key = "yPmwyYd/pS6gVBGfRLJL6ZuUme6OW+eTduPifW0/uaEFpbLv6yZBS5JXT5fjgrijwlghO/dXTVh/3h/H7Olh2Q=="
